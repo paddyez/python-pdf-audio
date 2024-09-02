@@ -15,8 +15,10 @@ brew install espeak ffmpeg pipenv vorbis-tools
 ### Ubuntu
 
 ```bash
-sudo apt install espeak ffmpeg vorbis-tools
-pip install pipenv
+sudo apt install espeak ffmpeg pipx vorbis-tools
+pipx ensurepath
+python3 -m venv .venv/
+pipx install pipenv
 ```
 
 ## Install
