@@ -4,10 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pyttsx3 = "*"
 pypdf2 = "*"
+pyttsx4 = "*"
+numpy = "*"
+pyaudio = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.10"
+python_version = "3.11.9"

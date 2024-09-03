@@ -1,6 +1,6 @@
 """Module providing RegEx"""
 import re
-import pyttsx3
+import pyttsx4
 from PyPDF2 import PdfReader
 
 def read_pdf():
@@ -30,7 +30,7 @@ def change_voice(gender='VoiceGenderFemale'):
             return True
     raise RuntimeError(f"Language '{ENGLISH}' for gender '{gender}' not found")
 
-speaker = pyttsx3.init()
+speaker = pyttsx4.init()
 STRIPPED_TEXT = read_pdf()
 ENGLISH = b'\x02en-gb'
 DEUTSCH = b'\x05de'
